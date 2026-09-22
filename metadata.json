@@ -1,0 +1,6 @@
+{
+  "name": "Đêm Hội Trăng Rằm - Lễ Hội Trung Thu",
+  "description": "Trang web lễ hội Trung Thu với lồng đèn lung linh, đếm ngược đêm trăng rằm, lá phong rơi, treo thư điều ước và chia sẻ thiệp chúc mừng.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,73 @@
+import { Wish } from '../types';
+
+export const INITIAL_WISHES: Wish[] = [
+  {
+    id: 'wish-1',
+    author: 'Minh Anh',
+    location: 'Hà Nội',
+    content: 'Mong Trung Thu năm nay cả gia đình được quây quần đông đủ bên mâm cỗ trông trăng, cha mẹ luôn mạnh khỏe và bình an.',
+    category: 'doan-vien',
+    lanternType: 'red',
+    likes: 42,
+    createdAt: '2026-09-20T10:30:00Z',
+  },
+  {
+    id: 'wish-2',
+    author: 'Hoàng Long',
+    location: 'Hội An',
+    content: 'Cầu mong công việc thuận buồm xuôi gió, tâm hồn luôn an nhiên như ánh trăng rằm trôi trên dòng sông Hoài thơ mộng.',
+    category: 'binh-an',
+    lanternType: 'lotus',
+    likes: 38,
+    createdAt: '2026-09-20T14:15:00Z',
+  },
+  {
+    id: 'wish-3',
+    author: 'Thu Thảo',
+    location: 'TP. Hồ Chí Minh',
+    content: 'Ước cho kỳ thi sắp tới đạt kết quả thật cao, bước vào cánh cổng trường đại học mơ ước!',
+    category: 'hoc-van',
+    lanternType: 'star',
+    likes: 29,
+    createdAt: '2026-09-21T08:20:00Z',
+  },
+  {
+    id: 'wish-4',
+    author: 'Quốc Bảo & Mai Linh',
+    location: 'Đà Lạt',
+    content: 'Mong tình yêu của đôi ta luôn trọn vẹn và ngọt ngào như vị bánh dẻo bánh nướng đêm rằm.',
+    category: 'tinh-duyen',
+    lanternType: 'rabbit',
+    likes: 56,
+    createdAt: '2026-09-21T18:45:00Z',
+  },
+  {
+    id: 'wish-5',
+    author: 'Thanh Hằng',
+    location: 'Huế',
+    content: 'Nguyện cầu cho muôn nhà no ấm, các em nhỏ vùng cao đều có lồng đèn rực rỡ và tiếng cười rộn rã đón trăng.',
+    category: 'binh-an',
+    lanternType: 'gold',
+    likes: 67,
+    createdAt: '2026-09-21T21:00:00Z',
+  },
+  {
+    id: 'wish-6',
+    author: 'Tuấn Kiệt',
+    location: 'Đà Nẵng',
+    content: 'Chúc đại gia đình và bạn bè luôn dồi dào sức khỏe, tài lộc vượng phát, vạn sự cát tường như ý!',
+    category: 'suc-khoe',
+    lanternType: 'red',
+    likes: 33,
+    createdAt: '2026-09-22T02:10:00Z',
+  },
+];
+
+export const CATEGORY_LABELS: Record<string, { label: string; icon: string; color: string }> = {
+  'doan-vien': { label: 'Đoàn Viên', icon: 'fa-house-chimney-window', color: 'from-amber-500 to-red-600' },
+  'binh-an': { label: 'Bình An', icon: 'fa-dove', color: 'from-emerald-500 to-teal-700' },
+  'suc-khoe': { label: 'Sức Khỏe', icon: 'fa-heart-pulse', color: 'from-rose-500 to-red-700' },
+  'tai-loc': { label: 'Tài Lộc', icon: 'fa-coins', color: 'from-yellow-400 to-amber-600' },
+  'hoc-van': { label: 'Đỗ Đạt', icon: 'fa-graduation-cap', color: 'from-blue-500 to-indigo-700' },
+  'tinh-duyen': { label: 'Tình Duyên', icon: 'fa-heart', color: 'from-pink-500 to-rose-600' },
+};
